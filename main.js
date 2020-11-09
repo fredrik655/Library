@@ -7,11 +7,20 @@ const submitWindow = document.querySelector('.form-window');
 const submitBtn = document.querySelector('.submit-btn');
 const addBookBtn = document.querySelector('.add-book-btn');
 
-function Book(title, author, pages, read = false){
+/*function Book(title, author, pages, read = false){
     this.title   = title;
     this.author = author;
     this.pages = pages;
     this.read = read;
+}*/
+
+class Book {
+    constructor(title, author, pages, read = false){
+        this.title   = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary(name, author, pages, read) {
