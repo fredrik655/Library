@@ -56,7 +56,7 @@ function emptyInputFields(title, author, pages, read){
 }
 
 function checkIfTextFieldsAreEmpty(title, author, pages){
-    return (title.value === '') ? true : (author.value === '') ? true : (pages.value === '') ? true : false;
+    return (!title.checkValidity()) ? true : (!author.checkValidity()) ? true : (!pages.checkValidity()) ? true : false;
 }
 
 
